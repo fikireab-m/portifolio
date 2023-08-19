@@ -8,42 +8,84 @@ import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
 
 const Projects = ({
-  listTestimoni = [
+  projects = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
+    },
+    {
+      name: "ASTU LMS",
+      image: "/assets/projects/lms.png",
+      desc:
+        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
     },
   ],
 }) => {
@@ -89,21 +131,22 @@ const Projects = ({
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {listTestimoni.map((listTestimonis, index) => (
+        {projects.map((project, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="card flex flex-col justify-center items-center hover:border-orange-500">
                 <div>
                 <Image
-                    src={listTestimonis.image}
-                    height={400}
-                    width={400}
-                    alt="project_screenshot"
+                  className="border-t-2xl rounded-t-lg"
+                    src={project.image}
+                    width={500}
+                    height={500}
+                    alt="project screenshot"
                   />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize px-6">
-                  Project Title
+                  {project.name}
                 </p>
-                <p className="px-4 my-2 text-left">“{listTestimonis.testimoni}”.</p>
+                <p className="px-4 my-2 text-left">{project.desc}.</p>
                 <button className="project-button bg-orange-500">
                   View Project
                 </button>

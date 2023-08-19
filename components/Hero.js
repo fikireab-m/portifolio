@@ -42,7 +42,7 @@ const Hero = ({
             <p className="text-black-500 mt-2 mb-4">
               Looking for a skilled software engineer who can deliver top-notch solutions for your business needs? 
             </p>
-            <p className="mb-2">I can help you bring your ideas to life by designing, <strong>coding, testing, and maintaining</strong> software applications that meet your needs.</p>
+            <p className="mb-2">I can help you bring your ideas to life by <strong>designing, coding, testing, and maintaining</strong> software applications that meet your needs.</p>
             <p className="mt-2 mb-4"><strong>Let's get started!</strong></p>
             <ButtonPrimary>Hire me</ButtonPrimary>
           </div>
