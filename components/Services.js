@@ -35,7 +35,7 @@ const Services = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="card flex flex-col justify-start items-center hover:border-orange-500"
+                className="card  rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -66,7 +66,7 @@ const Services = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="card flex flex-col justify-start items-center hover:border-orange-500"
+                className="card  rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {
@@ -97,7 +97,7 @@ const Services = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="card flex flex-col justify-start items-center hover:border-orange-500"
+                className="card  rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
                 whileHover={{
                   scale: 1.1,
                   transition: {

@@ -133,10 +133,10 @@ const Projects = ({
       >
         {projects.map((project, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="card flex flex-col justify-center items-center hover:border-orange-500">
+            <div className="card rounded-xl flex flex-col justify-center items-center hover:border-orange-500">
                 <div>
                 <Image
-                  className="border-t-2xl rounded-t-lg"
+                  className="border-t-2xl rounded-t-2xl"
                     src={project.image}
                     width={500}
                     height={500}
