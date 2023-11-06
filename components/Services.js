@@ -141,10 +141,7 @@ const Services = () => {
             </motion.p>
           </ScrollAnimationWrapper>
         </div>
-        <div className="flex flex-col w-full" id="projects">
-          <ScrollAnimationWrapper>
-
-          </ScrollAnimationWrapper>
+        <div className="w-full" id="projects">
           <ScrollAnimationWrapper className="w-full flex flex-col">
             <motion.div variants={scrollAnimation}>
               <Projects />

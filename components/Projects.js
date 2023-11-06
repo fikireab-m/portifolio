@@ -32,61 +32,7 @@ const Projects = ({
       image: "/assets/projects/lms.png",
       desc:
         "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
-    {
-      name: "ASTU LMS",
-      image: "/assets/projects/lms.png",
-      desc:
-        "ASTU LMS is a learning management system project developed for Adama Science and Technology University. The system is designed to manage the learning process of students and teachers",
-    },
+    }
   ],
 }) => {
   const settings = {
@@ -132,7 +78,7 @@ const Projects = ({
         className="flex items-stretch justify-items-stretch"
       >
         {projects.map((project, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
+          <div className="px-2 flex items-stretch" key={index}>
             <div className="card rounded-xl flex flex-col justify-center items-center hover:border-orange-500">
                 <div>
                 <Image

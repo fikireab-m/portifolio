@@ -104,6 +104,13 @@ li.check:before {
   opacity: 1;
  }
 
+ @media (max-width: 768px) {
+ .card:hover {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+ }
+}
+
  /* Project cards */
 
 
