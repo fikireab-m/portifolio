@@ -48,14 +48,14 @@ const About = () => {
           <ul className="text-black-500 self-start list-inside ml-8 mb-4">
             {qualities.map((quality, index) => (
               <motion.li
-                className="relative circle-check custom-list"
+                className="relative circle-check custom-list cursor-pointer"
                 custom={{duration: 2 + index}}
                 variants={scrollAnimation}
                 key={quality}
                 whileHover={{
-                scale : 1.1,
+                scale : 1.05,
                 transition: {
-                  duration: .2
+                  duration: 0.3
                 }
                 }}>
                   {quality}
