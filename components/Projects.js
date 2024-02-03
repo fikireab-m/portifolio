@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-// import react slick
 import Slider from "react-slick";
 import Image from "next/image";
-import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import ButtonOutline from "./misc/ButtonOutline.";
+import Github from "../public/assets/Icon/icons8-github.svg";
 
 const Projects = ({
   projects = [
@@ -80,20 +80,28 @@ const Projects = ({
         {projects.map((project, index) => (
           <div className="px-2 flex items-stretch" key={index}>
             <div className="card rounded-xl flex flex-col justify-center items-center hover:border-orange-500">
-                <div>
+              <div>
                 <Image
                   className="border-t-2xl rounded-t-2xl"
-                    src={project.image}
-                    width={500}
-                    height={500}
-                    alt="project screenshot"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize px-6">
-                  {project.name}
-                </p>
-                <p className="px-4 my-2 text-left">{project.desc}.</p>
+                  src={project.image}
+                  width={500}
+                  height={500}
+                  alt="project screenshot"
+                />
               </div>
+              <p className="text-lg text-black-600 font-medium capitalize px-6">
+                {project.name}
+              </p>
+              <p className="px-4 my-2 text-left">{project.desc}.</p>
+              <div className="font-medium flex gap-2">
+                <button className="font-medium tracking-wide px-2 text-orange-500 bg-white-500 outline-none rounded-full hover:border border-orange-500 transform transition all duration-500 hover:shadow-orange">
+                  <Github className="w-8 h-8" />
+                </button>
+                <button className="font-medium tracking-wide px-2 text-orange-500 bg-white-500 outline-none rounded-full hover:border border-orange-500 transform transition all duration-500 hover:shadow-orange">
+                  <Github className="w-8 h-8" />
+                </button>
+              </div>
+            </div>
 
           </div>
         ))}

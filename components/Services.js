@@ -109,14 +109,14 @@ const Services = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-between items-center z-10 bg-white-500">
+              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-white-500">
                 <div className="pb-4">
-                  <h5 className="text-gray-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium py-4">
+                  <h5 className="text-gray-600 text-xl">
                     Don't Forget To Reach Out
                   </h5>
-                  <p>Let's Chat</p>
+                  <h5 className="text-4xl text-gray-400 font-bold pt-2">Let's Chat</h5>
                 </div>
-                <div className="flex w-full mt-2 mb-8 -mx-2">
+                <div className="flex">
                   <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
                     <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener noreferrer">
                       <LinkedIn className="h-6 w-6" />
