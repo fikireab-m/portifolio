@@ -93,10 +93,10 @@ const Services = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-400 leading-relaxed mx-auto">
               Projects
             </motion.h3>
-            <motion.p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12" variants={scrollAnimation}>
+            <motion.p className="mx-auto pt-2" variants={scrollAnimation}>
               Some of the projects I have worked on
             </motion.p>
           </ScrollAnimationWrapper>
