@@ -52,7 +52,7 @@ const Services = () => {
               What I do ?
             </motion.h3>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             {
               services.map((service, index) => (
                 <Card>
