@@ -1,135 +1,95 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Projects from "./Projects";
+import Card from "./Card";
+import LinkedIn from "../public/assets/Icon/icons8-linkedin.svg";
+import Github from "../public/assets/Icon/icons8-github.svg";
+import Instagram from "../public/assets/Icon/instagram.svg";
+import Facebook from "../public/assets/Icon/facebook.svg";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
-
+  const services = [
+    {
+      title: "UI/UX Design",
+      desc: `Visually appealing, User-friendly, and Innovative`,
+      imgurl: "/assets/services/uiux1.png",
+      tools: ["Figma", "Adobe XD", "Adobe Photoshop"]
+    },
+    {
+      title: "Mobile Application Development",
+      desc: `Beautiful cross-platform mobile applications`,
+      imgurl: "/assets/services/mobiledev.png",
+      tools: ["Flutter", "Java", "Firebase"]
+    },
+    {
+      title: "Front-end Development",
+      desc: `Responsive, Fast loading, Consistent, and Scalable`,
+      imgurl: "/assets/services/frontend.png",
+      tools: ["HTML5", "CSS3", "Javascript", "React js", "Tailwind Css", "Material UI"],
+    },
+    {
+      title: "Backend Development",
+      desc: `Scalable, Secure, Reliable, and Easy to integrate`,
+      imgurl: "/assets/services/backend.png",
+      tools: ["Node js", "Express js", "Mongo DB", "My SQL", "Django", "Python"]
+    }
+  ]
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="services"
-    >
+      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14">
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div className="flex flex-col w-full">
+        <div id="services" className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-400 leading-relaxed"
             >
-              What I do
+              What I do ?
             </motion.h3>
-            <motion.p
-              variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
-            >
-              Here are some of the services I provide:
-            </motion.p>
           </ScrollAnimationWrapper>
-          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="card rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-                <div>
-                  <Image
-                  className="border-t-2xl rounded-t-lg"
-                    src="/assets/uiux.jpg"
-                    width={500}
-                    height={500}
-                    alt="UI/UX design"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize px-6">
-                  UI/UX Design
-                </p>
-                <p className="px-4 text-left text-black-500">
-                  Visually appealing., Intuitive, User-friendly, Engaging and interactive, Innovative, and Unique designs.
-                </p>
-                <button className="card-button bg-orange-500">
-                  Here me
-                </button>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="card  rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-                <div>
-                  <Image
-                  className="border-t-2xl rounded-t-lg"
-                    src="/assets/front-end.jpg"
-                    width={500}
-                    height={500}
-                    alt="front-end development"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize px-6">
-                  Front-end Development
-                </p>
-                <p className="px-4 text-left text-black-500">
-                  Responsive, Accessible, Fast loading speed, Consistent across all pages, Scalable, Easy to navigate
-                </p>
-                <button className="card-button bg-orange-500">
-                  Here me
-                </button>
-              </motion.div>
-            </ScrollAnimationWrapper>
-            <ScrollAnimationWrapper className="flex justify-center">
-              <motion.div
-                variants={scrollAnimation}
-                className="card rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
-                whileHover={{
-                  scale: 1.1,
-                  transition: {
-                    duration: .2
-                  }
-                }}
-              >
-                <div>
-                <Image
-                  className="border-t-2xl rounded-t-lg"
-                    src="/assets/back-end.jpg"
-                    width={500}
-                    height={500}
-                    alt="back-end development"
-                  />
-                </div>
-                <p className="text-lg text-black-600 font-medium capitalize px-6">
-                  Back-end Development
-                </p>
-                <p className="px-4 text-left text-black-500">
-                Scalable and efficient,
-                  Secure and reliable, and
-                  Easy to integrate with other systems.
-                </p>
-                <button className="card-button bg-orange-500">
-                  Here me
-                </button>
-              </motion.div>
-            </ScrollAnimationWrapper>
+          <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+            {
+              services.map((service, index) => (
+                <Card>
+                  <ScrollAnimationWrapper key={index} className="flex justify-center">
+                    <motion.div
+                      variants={scrollAnimation}
+                      className="rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
+                      whileHover={{
+                        scale: 1.1,
+                        transition: {
+                          duration: .2
+                        }
+                      }}
+                    >
+                      <div>
+                        <Image
+                          className="border-t-2xl rounded-t-lg"
+                          src={service.imgurl}
+                          width={300}
+                          height={300}
+                          alt={service.title}
+                        />
+                      </div>
+                      <p className="text-lg text-gray-600 font-medium capitalize px-6">
+                        {service.title}
+                      </p>
+                      <p className="px-2 text-gray-600 text-center">
+                        {service.desc}
+                      </p>
+                    </motion.div>
+                  </ScrollAnimationWrapper>
+                </Card>
+              ))
+            }
           </div>
         </div>
-        <div className="flex flex-col w-full my-16">
+        <div id="projects" className="flex flex-col w-full my-16">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -141,7 +101,7 @@ const Services = () => {
             </motion.p>
           </ScrollAnimationWrapper>
         </div>
-        <div className="w-full" id="projects">
+        <div className="w-full">
           <ScrollAnimationWrapper className="w-full flex flex-col">
             <motion.div variants={scrollAnimation}>
               <Projects />
@@ -149,14 +109,35 @@ const Services = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
-                <div className="text-left w-10/12 mb-6 sm:mb-0">
-                  <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium py-4">
+              <div className="absolute rounded-xl py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-between items-center z-10 bg-white-500">
+                <div className="pb-4">
+                  <h5 className="text-gray-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium py-4">
                     Don't Forget To Reach Out
                   </h5>
-                  <p>Let's bring your ideas to life!</p>
+                  <p>Let's Chat</p>
                 </div>
-                <ButtonPrimary>Contact</ButtonPrimary>
+                <div className="flex w-full mt-2 mb-8 -mx-2">
+                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                    <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener noreferrer">
+                      <LinkedIn className="h-6 w-6" />
+                    </a>
+                  </div>
+                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                    <a href="https://github.com/fikireab-m" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-6 w-6" />
+                    </a>
+                  </div>
+                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                    <a href="https://www.facebook.com/crash.override.o/" target="_blank" rel="noopener noreferrer">
+                      <Facebook className="h-6 w-6" />
+                    </a>
+                  </div>
+                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                    <a href="https://www.instagram.com/fikireab1/" target="_blank" rel="noopener noreferrer">
+                      <Instagram className="h-6 w-6" />
+                    </a>
+                  </div>
+                </div>
               </div>
               <div
                 className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"

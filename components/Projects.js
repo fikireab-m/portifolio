@@ -70,7 +70,7 @@ const Projects = ({
   const [sliderRef, setSliderRef] = useState(null);
 
   return (
-    <div id="projects">
+    <div>
       <Slider
         {...settings}
         arrows={false}
@@ -93,9 +93,6 @@ const Projects = ({
                   {project.name}
                 </p>
                 <p className="px-4 my-2 text-left">{project.desc}.</p>
-                <button className="project-button bg-orange-500">
-                  View Project
-                </button>
               </div>
 
           </div>

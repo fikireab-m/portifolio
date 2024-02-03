@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import Image from "next/image";
@@ -22,7 +21,7 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col items-center">
           <LinkScroll
-            to="home" className="col-start-2 col-end-3 items-center">
+            to="home" className="col-start-2 col-end-3 items-center cursor-pointer">
             <Image
               src="/assets/logo.jpg"
               alt="BrannaTech"

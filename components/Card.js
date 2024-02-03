@@ -48,7 +48,7 @@ const TiltCard = ({children}) => {
         rotateX,
         rotateY,
       }}
-      className="relative rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
+      className="relative bg-white rounded-xl "
     >
       <div
         style={{
@@ -61,6 +61,7 @@ const TiltCard = ({children}) => {
           style={{
             transform: "translateZ(50px)",
           }}
+          className="flex justify-center w-full"
         >
           {children}
         </div>
