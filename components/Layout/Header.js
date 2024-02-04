@@ -22,10 +22,17 @@ const Header = () => {
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col items-center">
           <LinkScroll
-            to="home" className="col-start-2 col-end-3 items-center cursor-pointer">
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={1000}
+            onSetActive={() => {
+              setActiveLink("");
+            }}
+            className="col-start-2 col-end-3 items-center cursor-pointer">
             <Image
               src="/assets/logo.png"
-              alt="BrannaTech"
+              alt="My Logo"
               quality={100}
               width={64}
               height={64}
@@ -89,12 +96,21 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 font-medium flex items-center">
-            <div className="group mx-4 bg-white rounded-full items-center justify-center flex p-1 shadow-lg transform transition all duration-500">
+            <div className="group mx-4 bg-white rounded-full items-center justify-center flex p-1 shadow-lg hover:bg-blue-500 transform transition all duration-500">
               <a href="https://github.com/fikireab-m" target="_blank" rel="noopener">
                 <FaGithub className="h-8 w-8 text-blue-500 group-hover:text-white" />
               </a>
             </div>
-            <ButtonOutline><a href="#contact">Contact Me</a></ButtonOutline>
+            <LinkScroll
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("");
+              }}>
+              <ButtonOutline>Contact Me</ButtonOutline>
+            </LinkScroll>
           </div>
         </nav>
       </header>
