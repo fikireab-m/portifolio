@@ -7,7 +7,7 @@ import SeoHead from "../components/SeoHead";
 export default function Home() {
   return (
     <>
-      <SeoHead title='Fikireab-M | portifolio' />
+      <SeoHead title='Fikireab-M' />
       <Layout>
         <Hero />
         <About />

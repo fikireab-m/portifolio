@@ -78,14 +78,14 @@ const Projects = ({
         className="flex items-stretch justify-items-stretch"
       >
         {projects.map((project, index) => (
-          <div className="px-2 flex items-stretch" key={index}>
-            <div className="card rounded-xl flex flex-col justify-center items-center hover:border-orange-500">
+          <div className="p-2 flex items-stretch" key={index}>
+            <div className="card rounded-xl flex flex-col justify-center shadow-md items-center hover:border-blue-500">
               <div>
                 <Image
                   className="border-t-2xl rounded-t-2xl"
                   src={project.image}
                   width={500}
-                  height={500}
+                  height={300}
                   alt="project screenshot"
                 />
               </div>
@@ -94,10 +94,10 @@ const Projects = ({
               </p>
               <p className="px-4 my-2 text-left">{project.desc}.</p>
               <div className="font-medium flex gap-2">
-                <button className="font-medium tracking-wide px-2 text-orange-500 bg-white-500 outline-none rounded-full hover:border border-orange-500 transform transition all duration-500 hover:shadow-orange">
+                <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
                   <Github className="w-8 h-8" />
                 </button>
-                <button className="font-medium tracking-wide px-2 text-orange-500 bg-white-500 outline-none rounded-full hover:border border-orange-500 transform transition all duration-500 hover:shadow-orange">
+                <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
                   <Github className="w-8 h-8" />
                 </button>
               </div>
@@ -109,13 +109,13 @@ const Projects = ({
       <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white-500 transition-all text-blue-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <ArrowBack className="h-6 w-6 " />
           </div>
           <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white-500 transition-all text-blue-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <ArrowNext className="h-6 w-6" />
