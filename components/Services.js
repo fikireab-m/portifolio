@@ -22,7 +22,7 @@ const Services = () => {
     {
       title: "Mobile Application Development",
       desc: `Beautiful cross-platform mobile applications`,
-      imgurl: "/assets/services/mobiledev.png",
+      imgurl: "/assets/services/mobiledev1.png",
       tools: ["Flutter", "Java", "Firebase"]
     },
     {
