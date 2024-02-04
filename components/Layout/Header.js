@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa6"
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -87,7 +88,12 @@ const Header = () => {
               Projects
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium">
+          <div className="col-start-10 col-end-12 font-medium flex items-center">
+            <div className="group mx-4 bg-white rounded-full items-center justify-center flex p-1 shadow-lg transform transition-all duration-500 hover:bg-blue-600">
+              <a href="https://github.com/fikireab-m" target="_blank" rel="noopener">
+                <FaGithub className="h-8 w-8 text-blue-500 group-hover:text-white" />
+              </a>
+            </div>
             <ButtonOutline>Hire Me</ButtonOutline>
           </div>
         </nav>

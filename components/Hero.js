@@ -24,8 +24,14 @@ const Hero = () => {
             <h1 className="title-text text-6xl lg:text-7xl font-bold text-blue-500 transform transition-all duration-500 ease-in-out hover:tracking-widest">
               A software engineer.
             </h1>
-            <p className="py-8 text-xl font-semibold text-gray-500">I can help you bring your ideas to life</p>
-            <ButtonPrimary><a href="#contact">Let's Chat</a></ButtonPrimary>
+            <p className="py-8 text-xl font-semibold text-gray-500">
+              I can help you bring your ideas to life. <br />
+              Elevate Your Digital Experience with me.
+            </p>
+            <button
+              className="relative px-8 rounded-full bg-gradient-to-br from-blue-600 to-sky-600 isolation-auto z-10 text-xl py-3 px-8 lg:px-16 rounded-full tracking-normal text-white shadow-none transform transition-all duration-500 ease-in-out hover:shadow-2xl hover:shadow-sky-500 hover:text-2xl hover:font-bold hover:tracking-widest before:absolute before:w-full before:transition-all before:duration-1000 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-sky-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-1000">
+              <a href="#contact">Let's Talk</a>
+            </button>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>

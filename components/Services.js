@@ -108,30 +108,30 @@ const Services = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10  bg-white">
+              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-gray-200">
                 <div className="pb-4">
                   <h5 className="text-gray-500 text-xl">
                     Don't Forget To Reach Out
                   </h5>
-                  <h5 className="text-4xl text-gray-400 font-bold pt-2">Let's Chat</h5>
+                  <h5 className="text-4xl text-gray-600 font-bold pt-2">Let's Chat</h5>
                 </div>
                 <div className="flex">
-                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
                     <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener">
                       <FaLinkedin className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
                     <a href="https://t.me/fikireab1" target="_blank" rel="noopener">
                       <FaTelegram className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                    <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener">
+                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
+                    <a href="mailto:fikireab.meku@gmail.com" rel="noopener">
                       <SiGmail className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
+                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
                     <a href="https://www.instagram.com/fikireab1/?igsh=YnhlbHo2emQ5cjR1" target="_blank" rel="noopener noreferrer">
                       <FaSquareInstagram className="h-6 w-6 text-blue-500" />
                     </a>
