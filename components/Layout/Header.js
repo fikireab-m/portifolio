@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          "fixed top-0 w-full  z-30 bg-white transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
@@ -23,7 +23,7 @@ const Header = () => {
           <LinkScroll
             to="home" className="col-start-2 col-end-3 items-center cursor-pointer">
             <Image
-              src="/assets/logo.jpg"
+              src="/assets/logo.png"
               alt="BrannaTech"
               quality={100}
               width={64}
@@ -44,8 +44,8 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 a")
+                  ? " text-blue-500 animation-active "
+                  : " text-black-500 hover:text-blue-500 a")
               }
             >
               About
@@ -62,8 +62,8 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "services"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-blue-500 animation-active "
+                  : " text-black-500 hover:text-blue-500 ")
               }
             >
               Services
@@ -80,8 +80,8 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "projects"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-blue-500 animation-active "
+                  : " text-black-500 hover:text-blue-500 ")
               }
             >
               Projects
@@ -109,7 +109,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-blue-500 text-blue-500"
                   : " border-transparent")
               }
             >
@@ -141,7 +141,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "services"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-blue-500 text-blue-500"
                   : " border-transparent ")
               }
             >
@@ -173,7 +173,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "projects"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-blue-500 text-blue-500"
                   : " border-transparent ")
               }
             >
