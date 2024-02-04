@@ -38,33 +38,24 @@ const About = () => {
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
 
-        <motion.div className="flex flex-col items-center justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
-          <h3 className="text-3xl lg:text-4xl font-bold leading-relaxed text-gray-400">
-            Who am I ?
-          </h3>
-          <p className="my-2 text-black-500">   
-          My name is <strong>Fikireab Mekuriaw</strong>, and I'm a <strong>Software Engineer</strong> with:
-          </p>
-          <ul className="text-black-500 self-start list-inside ml-8 mb-4">
-            {qualities.map((quality, index) => (
-              <motion.li
-                className="relative circle-check custom-list cursor-pointer"
-                custom={{duration: 2 + index}}
-                variants={scrollAnimation}
-                key={quality}
-                whileHover={{
-                scale : 1.05,
+          <motion.div className="flex flex-col items-center justify-center ml-auto w-full lg:w-9/12" variants={scrollAnimation}>
+            <h3 className="text-3xl lg:text-4xl font-bold leading-relaxed text-blue-500">
+              Who am I ?
+            </h3>
+            <motion.p
+              className="relative py-4 mb-4 text-justify"
+              custom={{ duration: 2 }}
+              variants={scrollAnimation}
+              whileHover={{
+                scale: 1.05,
                 transition: {
                   duration: 0.3
                 }
-                }}>
-                  {quality}
-              </motion.li>
-              )
-            )}
-          </ul>
-          <ButtonOutline>View CV</ButtonOutline>
-        </motion.div>
+              }}>
+              Hello, I'm Fikireab Mekuriaw, a seasoned software engineer with over 4 years of experience dedicated to crafting exceptional digital products. My journey began with a love for problem-solving and has evolved into a passion for turning ideas into elegant, efficient, and scalable solutions. I approach software engineering as an art form, blending creativity and precision to build impactful digital experiences. Adapting to the rapid pace of technology is a continuous thrill for me, and I thrive in collaborative environments where diverse perspectives converge to create solutions greater than the sum of their parts. Beyond the code, I love traveling and learning the languages and cultures of others, believing that a well-rounded life enhances creativity.
+            </motion.p>
+            <ButtonOutline>View CV</ButtonOutline>
+          </motion.div>
         </ScrollAnimationWrapper>
       </div>
     </div>

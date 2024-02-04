@@ -44,7 +44,7 @@ const Projects = ({
         </a>
       );
     },
-    dotsClass: "slick-dots w-max absolute mt-20  ",
+    dotsClass: "slick-dots w-max absolute mt-8  ",
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -78,7 +78,7 @@ const Projects = ({
         className="flex items-stretch justify-items-stretch"
       >
         {projects.map((project, index) => (
-          <div className="p-2 flex items-stretch" key={index}>
+          <div className="flex items-stretch p-4" key={index}>
             <div className="card rounded-xl flex flex-col justify-center shadow-md items-center hover:border-blue-500">
               <div>
                 <Image
@@ -89,15 +89,15 @@ const Projects = ({
                   alt="project screenshot"
                 />
               </div>
-              <p className="text-lg text-black-600 font-medium capitalize px-6">
+              <p className="text-lg text-gray-400 font-bold capitalize px-2">
                 {project.name}
               </p>
-              <p className="px-4 my-2 text-left">{project.desc}.</p>
+              <p className="px-2 py-2 text-left">{project.desc}.</p>
               <div className="font-medium flex gap-2">
-                <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
+                <button  className="font-medium tracking-wide p-1 text-blue-500 bg-white outline-none rounded-full transform transition all duration-500 hover:shadow-blue-600 hover:shadow-md">
                   <FaGithub className="w-8 h-8" />
                 </button>
-                <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
+                <button className="font-medium tracking-wide p-1 text-blue-500 bg-white outline-none rounded-full transform transition all duration-500 hover:shadow-blue-600 hover:shadow-md">
                   <MdOutlineLaunch className="w-8 h-8" />
                 </button>
               </div>
@@ -107,7 +107,7 @@ const Projects = ({
         ))}
       </Slider>
       <div className="flex w-full items-center justify-end">
-        <div className="flex flex-none justify-between w-auto mt-14">
+        <div className="flex flex-none justify-between w-auto mt-4">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white-500 transition-all text-blue-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}

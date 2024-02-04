@@ -46,12 +46,12 @@ const Services = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-400 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed"
             >
               What I do ?
             </motion.h3>
           </ScrollAnimationWrapper>
-          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
+          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-8 lg:gap-16 pt-4 pb-8 lg:pb-12 lg:pt-8 px-6 sm:px-0 lg:px-6">
             {
               services.map((service, index) => (
                 <Card>
@@ -88,15 +88,15 @@ const Services = () => {
             }
           </div>
         </div>
-        <div id="projects" className="flex flex-col w-full my-16">
+        <div id="projects" className="flex flex-col w-full my-8">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-400 leading-relaxed mx-auto">
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed mx-auto">
               Projects
             </motion.h3>
-            <motion.p className="mx-auto pt-2" variants={scrollAnimation}>
-              Some of the projects I have worked on
+            <motion.p className="mx-auto pt-4 text-lg text-gray-500 font-semibold" variants={scrollAnimation}>
+              Here are some of the projects I have worked on:
             </motion.p>
           </ScrollAnimationWrapper>
         </div>
@@ -110,10 +110,10 @@ const Services = () => {
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
               <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-gray-200">
                 <div className="pb-4">
-                  <h5 className="text-gray-500 text-xl">
+                  <h5 className="text-blue-600 text-xl">
                     Don't Forget To Reach Out
                   </h5>
-                  <h5 className="text-4xl text-gray-600 font-bold pt-2">Let's Chat</h5>
+                  <h5 className="text-4xl text-gray-600 font-bold pt-4">Let's Chat</h5>
                 </div>
                 <div className="flex">
                   <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">

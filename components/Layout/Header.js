@@ -88,20 +88,20 @@ const Header = () => {
               Projects
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex items-center">
-            <div className="group mx-4 bg-white rounded-full items-center justify-center flex p-1 shadow-lg transform transition-all duration-500 hover:bg-blue-600">
+          <div className="col-start-10 font-medium flex items-center">
+            <div className="group mx-4 bg-white rounded-full items-center justify-center flex p-1 shadow-lg transform transition all duration-500">
               <a href="https://github.com/fikireab-m" target="_blank" rel="noopener">
                 <FaGithub className="h-8 w-8 text-blue-500 group-hover:text-white" />
               </a>
             </div>
-            <ButtonOutline>Hire Me</ButtonOutline>
+            <ButtonOutline><a href="#contact">Contact Me</a></ButtonOutline>
           </div>
         </nav>
       </header>
       {/* Mobile Navigation */}
 
       <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t ">
-        <div className="bg-white-500 sm:px-3">
+        <div className="bg-white sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
               activeClass="active"
