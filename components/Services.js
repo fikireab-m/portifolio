@@ -29,7 +29,6 @@ const Services = () => {
       title: "Front-end Development",
       desc: `Responsive, Fast loading, Consistent, and Scalable`,
       imgurl: "/assets/services/frontend.png",
-      tools: ["HTML5", "CSS3", "Javascript", "React js", "Tailwind Css", "Material UI"],
     },
     {
       title: "Backend Development",
@@ -39,19 +38,18 @@ const Services = () => {
     }
   ]
   return (
-    <div
+    <div id="services"
       className="bg-gradient-to-b from-gray-100 to-white w-full py-14">
-      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
-        <div id="services" className="flex flex-col w-full">
+      <div className="max-w-screen-2xl px-4 lg:px-8 mx-auto flex flex-col w-full text-center justify-center">
+        <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed"
-            >
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed">
               What I do ?
             </motion.h3>
           </ScrollAnimationWrapper>
-          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-8 lg:gap-16 pt-4 pb-8 lg:pb-12 lg:pt-8 px-6 sm:px-0 lg:px-6">
+          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-8 pt-4 pb-8 lg:pb-12 lg:pt-8 px-2 lg:px-8">
             {
               services.map((service, index) => (
                 <Card>
@@ -64,21 +62,19 @@ const Services = () => {
                         transition: {
                           duration: .2
                         }
-                      }}
-                    >
+                      }}>
                       <div>
                         <Image
-                          className="border-t-2xl rounded-t-lg"
                           src={service.imgurl}
                           width={300}
                           height={300}
                           alt={service.title}
                         />
                       </div>
-                      <p className="text-lg text-gray-400 font-medium capitalize px-6">
+                      <p className="text-lg text-gray-500 font-medium capitalize px-6">
                         {service.title}
                       </p>
-                      <p className="px-2 text-gray-800 text-center">
+                      <p className="text-sm px-2 text-center">
                         {service.desc}
                       </p>
                     </motion.div>
@@ -95,7 +91,7 @@ const Services = () => {
               className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed mx-auto">
               Projects
             </motion.h3>
-            <motion.p className="mx-auto pt-4 text-lg text-gray-500 font-semibold" variants={scrollAnimation}>
+            <motion.p className="mx-auto pt-4 text-xl text-gray-500 font-thin" variants={scrollAnimation}>
               Here are some of the projects I have worked on:
             </motion.p>
           </ScrollAnimationWrapper>
@@ -108,7 +104,7 @@ const Services = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-gray-200">
+              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-gray-100">
                 <div className="pb-4">
                   <h5 className="text-blue-600 text-xl">
                     Don't Forget To Reach Out

@@ -41,22 +41,18 @@ const TiltCard = ({children}) => {
       onMouseLeave={handleMouseLeave}
       style={{
         transformStyle: "preserve-3d",
-        height:450,
-        width:300
       }}
       animate={{
         rotateX,
         rotateY,
       }}
-      className="relative bg-gray-200 rounded-xl shadow-xl "
-    >
+      className="relative bg-gray-200 rounded-xl w-[300px] h-[460px]">
       <div
         style={{
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
-      >
+        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg">
         <div
           style={{
             transform: "translateZ(50px)",
