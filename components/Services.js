@@ -41,8 +41,8 @@ const Services = () => {
   ]
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14">
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      className="bg-gradient-to-b from-gray-100 to-white w-full py-14">
+      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div id="services" className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
@@ -59,7 +59,7 @@ const Services = () => {
                   <ScrollAnimationWrapper key={index} className="flex justify-center">
                     <motion.div
                       variants={scrollAnimation}
-                      className="rounded-xl flex flex-col justify-start items-center hover:border-orange-500"
+                      className="rounded-xl flex flex-col justify-start items-center"
                       whileHover={{
                         scale: 1.1,
                         transition: {
@@ -76,10 +76,10 @@ const Services = () => {
                           alt={service.title}
                         />
                       </div>
-                      <p className="text-lg text-gray-600 font-medium capitalize px-6">
+                      <p className="text-lg text-gray-400 font-medium capitalize px-6">
                         {service.title}
                       </p>
-                      <p className="px-2 text-gray-600 text-center">
+                      <p className="px-2 text-gray-800 text-center">
                         {service.desc}
                       </p>
                     </motion.div>
@@ -109,9 +109,9 @@ const Services = () => {
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-white-500">
+              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10  bg-white">
                 <div className="pb-4">
-                  <h5 className="text-gray-600 text-xl">
+                  <h5 className="text-gray-500 text-xl">
                     Don't Forget To Reach Out
                   </h5>
                   <h5 className="text-4xl text-gray-400 font-bold pt-2">Let's Chat</h5>
