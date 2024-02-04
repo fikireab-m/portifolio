@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 import Slider from "react-slick";
 import Image from "next/image";
-import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
-import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
-import ButtonOutline from "./misc/ButtonOutline.";
-import Github from "../public/assets/Icon/icons8-github.svg";
+import { FaGithub } from "react-icons/fa6"
+import { MdOutlineLaunch } from "react-icons/md";
+import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const Projects = ({
   projects = [
@@ -95,10 +95,10 @@ const Projects = ({
               <p className="px-4 my-2 text-left">{project.desc}.</p>
               <div className="font-medium flex gap-2">
                 <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
-                  <Github className="w-8 h-8" />
+                  <FaGithub className="w-8 h-8" />
                 </button>
                 <button className="font-medium tracking-wide px-2 text-blue-500 bg-white-500 outline-none rounded-full hover:border border-blue-500 transform transition all duration-500 hover:shadow-blue">
-                  <Github className="w-8 h-8" />
+                  <MdOutlineLaunch className="w-8 h-8" />
                 </button>
               </div>
             </div>
@@ -112,13 +112,13 @@ const Projects = ({
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white-500 transition-all text-blue-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
-            <ArrowBack className="h-6 w-6 " />
+            <FaArrowLeft className="h-6 w-6 " />
           </div>
           <div
             className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-blue-500 border hover:bg-blue-500 hover:text-white-500 transition-all text-blue-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
-            <ArrowNext className="h-6 w-6" />
+            <FaArrowRight className="h-6 w-6" />
           </div>
         </div>
       </div>

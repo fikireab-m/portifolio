@@ -1,15 +1,14 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
-import ButtonPrimary from "./misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import Projects from "./Projects";
 import Card from "./Card";
-import LinkedIn from "../public/assets/Icon/icons8-linkedin.svg";
-import Github from "../public/assets/Icon/icons8-github.svg";
-import Instagram from "../public/assets/Icon/instagram.svg";
-import Facebook from "../public/assets/Icon/facebook.svg";
+import { FaLinkedin } from "react-icons/fa6"
+import { SiGmail } from "react-icons/si"
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaTelegram } from "react-icons/fa";
 
 const Services = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -118,23 +117,23 @@ const Services = () => {
                 </div>
                 <div className="flex">
                   <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                    <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener noreferrer">
-                      <LinkedIn className="h-6 w-6" />
+                    <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener">
+                      <FaLinkedin className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
                   <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                    <a href="https://github.com/fikireab-m" target="_blank" rel="noopener noreferrer">
-                      <Github className="h-6 w-6" />
+                    <a href="https://t.me/fikireab1" target="_blank" rel="noopener">
+                      <FaTelegram className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
                   <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                    <a href="https://www.facebook.com/crash.override.o/" target="_blank" rel="noopener noreferrer">
-                      <Facebook className="h-6 w-6" />
+                    <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener">
+                      <SiGmail className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
                   <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
-                    <a href="https://www.instagram.com/fikireab1/" target="_blank" rel="noopener noreferrer">
-                      <Instagram className="h-6 w-6" />
+                    <a href="https://www.instagram.com/fikireab1/?igsh=YnhlbHo2emQ5cjR1" target="_blank" rel="noopener noreferrer">
+                      <FaSquareInstagram className="h-6 w-6 text-blue-500" />
                     </a>
                   </div>
                 </div>
