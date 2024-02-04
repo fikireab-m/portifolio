@@ -25,7 +25,7 @@ const Hero = () => {
               A software engineer.
             </h1>
             <p className="py-8 text-xl font-semibold text-gray-500">I can help you bring your ideas to life</p>
-            <ButtonPrimary>Let's Chat</ButtonPrimary>
+            <ButtonPrimary><a href="#contact">Let's Chat</a></ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
