@@ -27,7 +27,7 @@ const About = () => {
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
               src="/assets/Illustration2.png"
-              alt="VPN Illustrasi"
+              alt="Dev Illustrasi"
               layout="responsive"
               quality={100}
               height={414}
