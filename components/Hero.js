@@ -17,7 +17,7 @@ const Hero = () => {
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
           variants={scrollAnimation}>
-          <div className="mt-24 flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+          <div className="sm:mt-24 flex flex-col justify-center items-start row-start-2 sm:row-start-1">
             <h1 className="text-2xl font-semibold tracking-tight text-gray-400 sm:text-4xl pb-8 transform transition-all duration-500 ease-in-out hover:tracking-wide hover:font-bold hover:text-blue-500">
               Hi 👋, I'm Fikireab.
             </h1>
@@ -41,14 +41,14 @@ const Hero = () => {
               </button>
             </LinkScroll>
           </div>
-          <div className="mt-24 flex w-full">
+          <div className="mt-8 flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
               <Image
                 src="/assets/Illustration1.png"
                 alt="dev illustration"
                 quality={100}
                 width={612}
-                height={383}
+                height={612}
                 layout="responsive"
               />
             </motion.div>
