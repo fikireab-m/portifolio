@@ -39,24 +39,24 @@ const Services = () => {
   ]
   return (
     <div id="services"
-      className="bg-gradient-to-b from-gray-100 to-white w-full py-14">
-      <div className="max-w-screen-2xl px-4 lg:px-8 mx-auto flex flex-col w-full text-center justify-center">
+      className="w-full bg-gradient-to-b from-gray-100 to-white py-14">
+      <div className="flex flex-col justify-center w-full px-4 mx-auto text-center max-w-screen-2xl lg:px-8">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed">
+              className="text-2xl font-bold leading-relaxed text-blue-500 sm:text-3xl lg:text-4xl">
               What I do ?
             </motion.h3>
           </ScrollAnimationWrapper>
-          <div className="mx-auto grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 content-center gap-8 pt-4 pb-8 lg:pb-12 lg:pt-8 px-2 lg:px-8">
+          <div className="grid content-center grid-flow-row grid-cols-1 gap-8 px-2 pt-4 pb-8 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:pb-12 lg:pt-8 lg:px-8">
             {
               services.map((service, index) => (
-                <Card>
-                  <ScrollAnimationWrapper key={index} className="flex justify-center">
+                <ScrollAnimationWrapper key={index} className="flex justify-center">
+                  <Card >
                     <motion.div
                       variants={scrollAnimation}
-                      className="rounded-xl flex flex-col justify-start items-center"
+                      className="flex flex-col items-center justify-start rounded-xl"
                       whileHover={{
                         scale: 1.1,
                         transition: {
@@ -71,15 +71,15 @@ const Services = () => {
                           alt={service.title}
                         />
                       </div>
-                      <p className="text-lg text-gray-500 font-medium capitalize px-6">
+                      <p className="px-6 text-lg font-medium text-gray-500 capitalize">
                         {service.title}
                       </p>
-                      <p className="text-sm px-2 text-center">
+                      <p className="px-2 text-sm text-center">
                         {service.desc}
                       </p>
                     </motion.div>
-                  </ScrollAnimationWrapper>
-                </Card>
+                  </Card>
+                </ScrollAnimationWrapper>
               ))
             }
           </div>
@@ -88,54 +88,54 @@ const Services = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-500 leading-relaxed mx-auto">
+              className="mx-auto text-2xl font-bold leading-relaxed text-blue-500 sm:text-3xl lg:text-4xl">
               Projects
             </motion.h3>
-            <motion.p className="mx-auto pt-4 text-xl text-gray-500 font-thin" variants={scrollAnimation}>
+            <motion.p className="pt-4 mx-auto text-xl font-thin text-gray-500" variants={scrollAnimation}>
               Here are some of the projects I have worked on:
             </motion.p>
           </ScrollAnimationWrapper>
         </div>
         <div className="w-full">
-          <ScrollAnimationWrapper className="w-full flex flex-col">
+          <ScrollAnimationWrapper className="flex flex-col w-full">
             <motion.div variants={scrollAnimation}>
               <Projects />
             </motion.div>
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="relative w-full mt-16">
             <motion.div variants={scrollAnimation} custom={{ duration: 3 }} id="contact">
-              <div className="absolute rounded-xl py-8 px-6 sm:px-12 lg:px-16 w-full flex flex-col justify-center items-center z-10 bg-gray-100">
+              <div className="absolute z-10 flex flex-col items-center justify-center w-full px-6 py-8 bg-gray-100 rounded-xl sm:px-12 lg:px-16">
                 <div className="pb-4">
-                  <h5 className="text-blue-600 text-xl">
+                  <h5 className="text-xl text-blue-600">
                     Don't Forget To Reach Out
                   </h5>
-                  <h5 className="text-4xl text-gray-600 font-bold pt-4">Let's Chat</h5>
+                  <h5 className="pt-4 text-4xl font-bold text-gray-600">Let's Chat</h5>
                 </div>
                 <div className="flex">
-                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
+                  <div className="flex items-center justify-center p-2 mx-2 bg-white rounded-full shadow-lg">
                     <a href="https://www.linkedin.com/in/fikireab-m-332b09236/" target="_blank" rel="noopener">
-                      <FaLinkedin className="h-6 w-6 text-blue-500" />
+                      <FaLinkedin className="w-6 h-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
+                  <div className="flex items-center justify-center p-2 mx-2 bg-white rounded-full shadow-lg">
                     <a href="https://t.me/fikireab1" target="_blank" rel="noopener">
-                      <FaTelegram className="h-6 w-6 text-blue-500" />
+                      <FaTelegram className="w-6 h-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
+                  <div className="flex items-center justify-center p-2 mx-2 bg-white rounded-full shadow-lg">
                     <a href="mailto:fikireab.meku@gmail.com" rel="noopener">
-                      <SiGmail className="h-6 w-6 text-blue-500" />
+                      <SiGmail className="w-6 h-6 text-blue-500" />
                     </a>
                   </div>
-                  <div className="mx-2 bg-white rounded-full items-center justify-center flex p-2 shadow-lg">
+                  <div className="flex items-center justify-center p-2 mx-2 bg-white rounded-full shadow-lg">
                     <a href="https://www.instagram.com/fikireab1/?igsh=YnhlbHo2emQ5cjR1" target="_blank" rel="noopener noreferrer">
-                      <FaSquareInstagram className="h-6 w-6 text-blue-500" />
+                      <FaSquareInstagram className="w-6 h-6 text-blue-500" />
                     </a>
                   </div>
                 </div>
               </div>
               <div
-                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
+                className="absolute top-0 left-0 right-0 w-11/12 mx-auto mt-8 bg-black-600 opacity-5 roudned-lg h-60 sm:h-56"
                 style={{ filter: "blur(114px)" }}
               ></div>
             </motion.div>

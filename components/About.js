@@ -22,14 +22,14 @@ const About = () => {
     <div
       className="max-w-screen-2xl pt-8 mb-6 sm:pt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="about">
-      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 my-16">
+      <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 content-center gap-8 my-16">
         <ScrollAnimationWrapper className="flex w-full justify-end">
           <motion.div className="h-full w-full p-4" variants={scrollAnimation}>
             <Image
               src="/assets/illustration2.jpg"
               alt="Dev Illustrasi"
               layout="responsive"
-              quality={100}
+              quality={50}
               height={508}
               width={508}
             />
@@ -42,7 +42,7 @@ const About = () => {
               Who am I ?
             </h3>
             <motion.p
-              className="relative py-4 mb-4 text-justify"
+              className="relative leading-7 py-4 mb-4 text-justify"
               custom={{ duration: 2 }}
               variants={scrollAnimation}
               whileHover={{
@@ -51,7 +51,7 @@ const About = () => {
                   duration: 0.3
                 }
               }}>
-              Hello, I'm Fikireab Mekuriaw, a seasoned software engineer with over 4 years of experience dedicated to crafting exceptional digital products. My journey began with a love for problem-solving and has evolved into a passion for turning ideas into elegant, efficient, and scalable solutions. I approach software engineering as an art form, blending creativity and precision to build impactful digital experiences. Adapting to the rapid pace of technology is a continuous thrill for me, and I thrive in collaborative environments where diverse perspectives converge to create solutions greater than the sum of their parts. Beyond the code, I love traveling and learning the languages and cultures of others, believing that a well-rounded life enhances creativity.
+              Hello, I'm Fikireab Mekuriaw, a seasoned software engineer with hands-on experience dedicated to crafting exceptional digital products. My journey began with a love for problem-solving and has evolved into a passion for turning ideas into elegant, efficient, and scalable solutions. I approach software engineering as an art form, blending creativity and precision to build impactful digital experiences. Adapting to the rapid pace of technology is a continuous thrill for me, and I thrive in collaborative environments where diverse perspectives converge to create solutions greater than the sum of their parts. Beyond the code, I love traveling and learning the languages and cultures of others, believing that a well-rounded life enhances creativity.
             </motion.p>
             <ButtonOutline>View CV</ButtonOutline>
           </motion.div>
